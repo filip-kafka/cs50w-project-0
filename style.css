@@ -1,3 +1,10 @@
+:root {
+    --btn-border-color: #f8f9fa;
+    --border-color: rgb(224, 224, 224);
+    --shadow-color: rgb(238, 238, 238);
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -48,16 +55,16 @@ body {
 #search-bar {
    display: flex;
    flex-direction: row;
-   border: 1px solid rgb(224, 224, 224);
+   border: 1px solid var(--border-color);
    padding: 5px 20px 5px 20px;
    border-radius: 40px;
-   box-shadow: 0 0 2px 1px rgb(238, 238, 238);
+   box-shadow: 0 0 2px 1px var(--shadow-color);
    width: 540px;
    height: 40px;
 }
 
 #search-bar:hover {
-    box-shadow: 0 2px 3px 1px rgb(226, 226, 226);
+    box-shadow: 0 2px 3px 1px var(--border-color);
 }
 
 #search-input {
@@ -72,12 +79,12 @@ body {
 .search-btn {
     padding: 10px 16px;
     margin: 0 8px;
-    border: 1px solid #f8f9fa;
+    border: 1px solid var(--btn-border-color);
     border-radius: 10px;
-    background-color: #f8f9fa;
+    background-color: var(--btn-border-color);
     cursor: pointer;
 }
 
 .search-btn:hover {
-    border: 1px solid rgb(224, 224, 224);
+    border: 1px solid var(--border-color);
 }
