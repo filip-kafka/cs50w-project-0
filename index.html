@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Search</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Search | Filip Kafka</title>
     </head>
     <body>
-        <form action="https://www.google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-        </form>
+        <nav id="navbar">
+            <div class="nav-links">
+                <a class="nav-link" href="https://about.google/?fg=1&utm_source=google-CZ&utm_medium=referral&utm_campaign=hp-header">About</a>
+                <a class="nav-link" href="https://store.google.com/cz/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=cs&pli=1">Store</a>
+            </div>
+            <div class="nav-links">
+                <a class="nav-link" href="image_search.html">Image Search</a>
+                <a class="nav-link" href="advanced_search.html">Advanced Search</a>
+                <img id="nav-user-portrait" src="images/cs50duck.png" alt="CS50 duck">
+            </div>
+        </nav>
+
+        <div id="search-area">
+            <img id="search-logo" src="images/googl.png" alt="">
+            <form id="search-form" action="/search">
+                <div id="search-bar">
+                    <img class="search-icon" src="images/magnifying-glass-solid-full.svg" alt="">
+                    <input id="search-input" type="text" name="q">
+                    <img class="search-icon" src="images/microphone-solid-full.svg" alt="">
+                </div>
+                <div id="search-buttons">
+                    <input class="search-btn" type="submit" value="Google Search">
+                    <input class="search-btn" type="submit" value="I am feeling lucky">
+                </div>
+            </form>
+        </div>
     </body>
 </html>
