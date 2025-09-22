@@ -9,8 +9,7 @@
     <body>
         <nav id="navbar">
             <div class="nav-links">
-                <a class="nav-link" href="https://about.google/?fg=1&utm_source=google-CZ&utm_medium=referral&utm_campaign=hp-header">About</a>
-                <a class="nav-link" href="https://store.google.com/cz/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=cs&pli=1">Store</a>
+                <img id="search-logo" src="images/googl.png" alt="">
             </div>
             <div class="nav-links">
                 <a class="nav-link" href="index.html">Back to search</a>
@@ -18,8 +17,53 @@
             </div>
         </nav>
 
-        <div id="search-area">
-          
+        <div id="header-container">
+            <h1 id="header">Advanced Search</h1>
+        </div>
+
+        <div id="search-container">
+          <form id="adv-search-form" action="https://www.google.com/search">
+            <div id="form-header" class="form-row">
+                <div class="adv-form-column-left emphasised">Page search criteria</div>
+                <div class="adv-form-column-center"></div>
+                <div class="adv-form-column-right emphasised">Method of entry in the search box.</div>
+            </div>
+            <div class="form-row">
+                <div class="adv-form-column-left">All these words:</div>
+                <div class="adv-form-column-center">
+                    <input type="text" name="as_q">
+                </div>
+                <div class="adv-form-column-right">Enter important words: <span class="text-decor">tricolor rat terrier</span></div>
+            </div>
+            <div class="form-row">
+                <div class="adv-form-column-left">This is exactly the word or phrase:</div>
+                <div class="adv-form-column-center">
+                    <input type="text" name="as_epq">
+                </div>
+                <div class="adv-form-column-right">Enter the exact words in quotation marks: <span class="text-decor">"rat terrier"</span>.</div>
+            </div>
+            <div class="form-row">
+                <div class="adv-form-column-left">Any of these words:</div>
+                <div class="adv-form-column-center">
+                    <input type="text" name="as_oq">
+                </div>
+                <div class="adv-form-column-right">Among all the required words, insert the OR operator: <span class="text-decor">miniature OR standard</span></div>
+            </div>
+            <div class="form-row">
+                <div class="adv-form-column-left">None of these words:</div>
+                <div class="adv-form-column-center">
+                    <input type="text" name="as_eq">
+                </div>
+                <div class="adv-form-column-right">Before the words you don't want, type a minus sign: <span class="text-decor">-rodent, -"Jack Russell"</span></div>
+            </div>
+            <div class="form-row">
+                <div class="adv-form-column-left"></div>
+                <div class="adv-form-column-center">
+                    <input id="adv-search-btn" type="submit" value="Advanced Search">
+                </div>
+                <div class="adv-form-column-right"></div>
+            </div>
+          </form>
         </div>
     </body>
 </html>
