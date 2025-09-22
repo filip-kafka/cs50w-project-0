@@ -24,12 +24,12 @@
                 <div id="search-bar">
                     <img class="search-icon" src="images/magnifying-glass-solid-full.svg" alt="">
                     <input id="search-input" type="text" name="q">
-                    <input type="hidden" name="btnI" value="">
+                    <input type="hidden" name="btnI" value="1" disabled>
                     <img class="search-icon" src="images/microphone-solid-full.svg" alt="">
                 </div>
                 <div id="search-buttons">
                     <input class="search-btn" type="submit" value="Google Search">
-                    <input class="search-btn" type="submit" value="I am feeling lucky" formaction="https://www.google.com/search?btnI=1">
+                    <input class="search-btn" type="submit" value="I am feeling lucky" onclick="this.form.btnI.disabled = false">
                 </div>
             </form>
         </div>
